@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Challenge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h3>Date Challenge</h3>
+      <p>Find and return the day name for that date:</p>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group mb-3">
+            <span class="input-group-text">Date:</span>
+            <input
+              id="date"
+              type="text"
+              class="form-control"
+              placeholder="MM/DD/YYYY"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            onclick="getDayName()"
+          >
+            Learn the day name
+          </button>
+          <h3 id="dayName">...</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="date.js"></script>
+  </body>
+</html>
