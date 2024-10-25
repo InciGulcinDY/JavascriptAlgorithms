@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Events</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-3">
+        <h3>Javascript with HTML Events</h3>
+        <h6>Play with HTML Events</h6>
+
+      <div class="row">
+        <div class="col-6 border p-3">
+          <h5>OnChange</h5>
+          <input type="text" onchange="handleChange()" placeholder="Type something"> 
+          <h6 id="onChangeId">.</h6>
+        </div>
+        <div class="col-6 border p-3">
+          <h5>OnClick</h5>
+          <button class="btn btn-secondary" onclick="handleClick()">Click me</button>
+        </div>
+        <div class="col-6 border p-3">
+          <h5>OnMouseOver</h5>
+          <div id="mouseOverId" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()">Hover over me</div>
+        </div>
+        <div class="col-6 border p-3">
+            <h5 onload="handleOnLoad()">OnLoad</h5>
+            <h6 id="pageLoadId">.....</h6>
+        </div>
+        <div class="col-6 border p-3">
+            <h5>OnFocus</h5>
+            <input type="text" onfocus="this.style.backgroundColor='lightgreen'" placeholder="Focus on me">
+        </div>
+        <div class="col-6 border p-3">
+            <h5>OnBlur</h5>
+            <input type="text" onblur="this.style.backgroundColor='lightgray'" placeholder="Lose focus">
+        </div>
+        <div class="col-6 border p-3">
+            <h5>OnKeyPress</h5>
+            <input type="text" onkeypress="alert('Key pressed!')" placeholder="Press any key">
+        </div>
+        <div class="col-6 border p-3">
+            <h5>OnSubmit</h5>
+            <form onsubmit="alert('Form submitted!'); return false;">
+                <input type="text" placeholder="Enter text">
+                <button type="submit">Submit</button>
+            </form>              
+        </div>      
+
+      </div>
+    </div>
+
+    <script src="htmlEvents.js"></script>
+  </body>
+</html>

@@ -1,6 +1,18 @@
 function convertDataToInteger() {
-    const data = document.getElementById("dataToBeInteger").value; // Use .value to get input data
-    const result = parseInt(data); // Convert the string to integer
-    document.getElementById("resul1").innerHTML = isNaN(result) ? 'Invalid input' : result; // Use .innerHTML to update the result
+    const data = document.getElementById("dataToBeInteger").value;
+    const result = parseInt(data);
+    document.getElementById("resul1").innerHTML = isNaN(result) ? 'Invalid input' : result;
 }
-//TODO: Continue coding for this section!!!
+
+function convertDataToFloat(){
+    const data = document.getElementById("dataToBeFloat").value;
+    const result = parseFloat(data);
+    document.getElementById("result2").innerHTML = isNaN(result) ? 'Invalid input' : result;
+}
+
+function convertDataIntoAString(){
+    const data = document.getElementById("dataToBeString").value;
+    console.log(typeof(data));
+    const result = `New string is ${data}`;
+    document.getElementById("result3").innerHTML = result;
+}
